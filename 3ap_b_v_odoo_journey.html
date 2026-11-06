@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3AP B.V. - Odoo Journey</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-slate-50 via-blue-50/40 to-slate-100 text-slate-800 min-h-screen flex flex-col justify-between selection:bg-purple-500 selection:text-white relative overflow-x-hidden">
+
+  <!-- Background Decorative Glowing Blobs -->
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-gradient-to-r from-blue-300/30 via-purple-300/30 to-pink-300/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+  <div class="absolute bottom-0 right-0 w-[400px] h-[400px] bg-purple-200/40 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+  <!-- Top Header Navigation -->
+  <header class="w-full max-w-6xl mx-auto px-4 sm:px-6 pt-6 pb-2 flex items-center justify-between">
+    <div class="flex items-center gap-2 bg-white/80 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-slate-200/80 shadow-sm">
+      <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+      <span class="text-xs font-bold text-slate-700">3AP B.V.</span>
+      <span class="text-slate-300 text-xs">|</span>
+      <span class="text-[11px] font-medium text-slate-500">Odoo ERP Journey</span>
+    </div>
+    <div class="flex items-center gap-4">
+      <div class="hidden sm:block text-xs font-semibold text-slate-500">
+        Powered by <span class="text-purple-600 font-bold">Vraja Technologies</span>
+      </div>
+      <a 
+        href="https://vrajatechnologies.com/contactus" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-bold text-purple-700 bg-purple-100 hover:bg-purple-200 rounded-full border border-purple-200 transition-colors shadow-sm"
+      >
+        <span>Contact Us</span>
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 py-6 md:py-10 flex-grow flex flex-col justify-center space-y-8 md:space-y-12">
+    
+    <!-- Hero Header -->
+    <div class="text-center space-y-3 max-w-2xl mx-auto">
+      <span class="inline-block px-3.5 py-1 rounded-full bg-purple-100 text-purple-700 text-xs font-bold tracking-wide border border-purple-200">
+        Personalized Odoo Next Steps
+      </span>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+        Your Odoo Journey <br className="hidden sm:inline" />
+        <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600">
+          Doesn't Stop Here!
+        </span>
+      </h1>
+      <p class="text-slate-600 text-base sm:text-lg font-medium">
+        Discover what's possible with your existing Odoo.
+      </p>
+    </div>
+
+    <!-- 5 Colourful Interactive Cards Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      
+      <!-- Card 1: Customisation -->
+      <div 
+        onclick="openModal('Customisation', 'Tailor workflows & modules specifically to your business needs.', 'Make Odoo fit 3AP B.V.\'s exact operations instead of changing habits to fit rigid software.', 'from-blue-500 to-cyan-500')"
+        class="group bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm hover:shadow-xl hover:border-blue-400 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 relative overflow-hidden flex flex-col justify-between"
+      >
+        <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-blue-500 to-cyan-500"></div>
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-inner">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors">Customisation</h3>
+          <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+            Tailor workflows & modules specifically to your business needs.
+          </p>
+        </div>
+        <div class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-blue-600">
+          <span>Explore Benefit</span>
+          <span class="group-hover:translate-x-1 transition-transform">→</span>
+        </div>
+      </div>
+
+      <!-- Card 2: Automation -->
+      <div 
+        onclick="openModal('Automation', 'Eliminate repetitive manual administrative & accounting tasks.', 'Save hours each week by automating vendor invoice entries, trigger emails, and re-order points.', 'from-purple-500 to-pink-500')"
+        class="group bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm hover:shadow-xl hover:border-purple-400 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 relative overflow-hidden flex flex-col justify-between"
+      >
+        <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-purple-500 to-pink-500"></div>
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-inner">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 group-hover:text-purple-600 transition-colors">Automation</h3>
+          <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+            Eliminate repetitive manual administrative & accounting tasks.
+          </p>
+        </div>
+        <div class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-purple-600">
+          <span>Explore Benefit</span>
+          <span class="group-hover:translate-x-1 transition-transform">→</span>
+        </div>
+      </div>
+
+      <!-- Card 3: Integrations -->
+      <div 
+        onclick="openModal('Integrations', 'Seamlessly connect Odoo with your third-party tools & APIs.', 'Connect external banks, payment channels, e-commerce, or logistics platforms effortlessly.', 'from-indigo-500 to-blue-600')"
+        class="group bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm hover:shadow-xl hover:border-indigo-400 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 relative overflow-hidden flex flex-col justify-between"
+      >
+        <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-indigo-500 to-blue-600"></div>
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-inner">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">Integrations</h3>
+          <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+            Seamlessly connect Odoo with your third-party tools & APIs.
+          </p>
+        </div>
+        <div class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-indigo-600">
+          <span>Explore Benefit</span>
+          <span class="group-hover:translate-x-1 transition-transform">→</span>
+        </div>
+      </div>
+
+      <!-- Card 4: Optimisation -->
+      <div 
+        onclick="openModal('Optimisation', 'Gain real-time financial insights and faster reporting speed.', 'Get clean executive financial dashboards and key operational KPIs in real-time.', 'from-emerald-500 to-teal-600')"
+        class="group bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm hover:shadow-xl hover:border-emerald-400 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 relative overflow-hidden flex flex-col justify-between"
+      >
+        <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-emerald-500 to-teal-600"></div>
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-inner">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">Optimisation</h3>
+          <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+            Gain real-time financial insights and faster reporting speed.
+          </p>
+        </div>
+        <div class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-emerald-600">
+          <span>Explore Benefit</span>
+          <span class="group-hover:translate-x-1 transition-transform">→</span>
+        </div>
+      </div>
+
+      <!-- Card 5: Version Upgrades -->
+      <div 
+        onclick="openModal('Version Upgrades', 'Stay modern, secure, and ready for future Odoo releases.', 'Enjoy zero-downtime database upgrades and latest Odoo feature performance improvements.', 'from-amber-500 to-orange-500')"
+        class="group bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm hover:shadow-xl hover:border-amber-400 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 relative overflow-hidden flex flex-col justify-between sm:col-span-2 lg:col-span-1"
+      >
+        <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-amber-500 to-orange-500"></div>
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-inner">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 group-hover:text-amber-600 transition-colors">Version Upgrades</h3>
+          <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+            Stay modern, secure, and ready for future Odoo releases.
+          </p>
+        </div>
+        <div class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-amber-600">
+          <span>Explore Benefit</span>
+          <span class="group-hover:translate-x-1 transition-transform">→</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Ending Call To Action Section -->
+    <div class="bg-gradient-to-r from-slate-900 via-indigo-950 to-purple-950 rounded-3xl p-8 sm:p-10 text-center text-white shadow-xl border border-slate-800 space-y-5 relative overflow-hidden">
+      <div class="max-w-xl mx-auto space-y-2">
+        <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">
+          Ready to unlock more from Odoo?
+        </h2>
+        <p class="text-purple-200 text-sm">
+          Let’s take 3AP B.V.’s current setup to the next level of growth.
+        </p>
+      </div>
+
+      <div>
+        <a 
+          href="https://vrajatechnologies.com/contactus"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-bold px-8 py-3.5 rounded-xl shadow-lg shadow-purple-900/40 hover:shadow-purple-900/60 transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0 text-base"
+        >
+          <span>Let's Grow Together</span>
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer Branding -->
+  <footer class="w-full text-center py-6 text-xs text-slate-500 font-medium space-y-2">
+    <div class="inline-flex items-center gap-2 bg-white/70 px-4 py-1.5 rounded-full border border-slate-200 shadow-sm">
+      <span>Powered by</span>
+      <a href="https://vrajatechnologies.com/contactus" target="_blank" rel="noopener noreferrer" class="font-bold text-purple-600 hover:underline">
+        Vraja Technologies
+      </a>
+    </div>
+  </footer>
+
+  <!-- Simple Pop-up Modal for Card Details & CTA Toast -->
+  <div id="modalBackdrop" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4 transition-opacity">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-200 space-y-4 relative animate-in fade-in zoom-in duration-200">
+      
+      <!-- Close Button -->
+      <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 p-1">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+
+      <!-- Modal Content Header -->
+      <div id="modalHeader" class="space-y-1">
+        <span id="modalBadge" class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-purple-100 text-purple-700">3AP B.V. Focus</span>
+        <h3 id="modalTitle" class="text-2xl font-bold text-slate-900 mt-2">Card Title</h3>
+      </div>
+
+      <!-- Modal Body -->
+      <p id="modalDesc" class="text-slate-600 text-sm leading-relaxed">Description text</p>
+
+      <div class="bg-slate-50 rounded-xl p-4 border border-slate-100 space-y-1">
+        <span class="text-xs font-bold text-purple-600 block">Vraja Technologies Insight:</span>
+        <p id="modalDetail" class="text-xs text-slate-700 leading-relaxed font-medium">Key benefit statement for 3AP B.V.</p>
+      </div>
+
+      <!-- Action Button inside Modal -->
+      <div class="pt-2">
+        <a 
+          href="https://vrajatechnologies.com/contactus"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="block text-center w-full py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold rounded-xl text-sm shadow-md hover:from-blue-500 hover:to-purple-500 transition-all"
+        >
+          Discuss This Step with Vraja
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openModal(title, desc, detail, colorGradient) {
+      document.getElementById('modalTitle').innerText = title;
+      document.getElementById('modalDesc').innerText = desc;
+      document.getElementById('modalDetail').innerText = detail;
+      document.getElementById('modalBackdrop').classList.remove('hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('modalBackdrop').classList.add('hidden');
+    }
+  </script>
+</body>
+</html>
